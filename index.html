@@ -8,7 +8,9 @@
 
         Amount <input type="number"  id="principal">  <br/>
         Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
+        No. of Years <input type="range" value="10.5" min="0.0" max="25.0" oninput="this.nextElementSibling.value = this.value" id="years">
+        <output>10.5%</output>
+        <br/>
         Interest : <span id="result"></span><br>
 
         <button onclick="compute()">Compute</button>
